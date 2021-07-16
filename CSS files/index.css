@@ -1,0 +1,123 @@
+/* Homepage */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img_round {
+  border-radius: 50%;
+  line-height: 10px;
+  width: 70px;
+  margin: 5px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  border: 5px solid lightgrey;
+}
+/* Images */
+.carousel-inner{
+  height: 570px;
+}
+.carousel-inner .carousel-item img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.carousel-item.active {
+  display: block;
+  height: 600px;
+}
+.carousel-inner .carousel-item .carousel-box .carousel-content {
+  font-size: 20px;
+}
+.carousel-box {
+  position: relative;
+  width: 656px;
+  height: 203px;
+  background: rgba(17, 17, 16, 0.5);
+  bottom: 31%;
+  top: 25%;
+  left: 26%;
+  color: white;
+  padding: 10px 31px;
+  text-shadow: 0 1px 2px rgb(230 225 225 / 60%);
+}
+/*To have side by side images and particular bottom text with images*/
+.column {
+  float: left;
+  width: 12%;
+  padding: 15px;
+  text-align: center; 
+  font-family: cursive; 
+  color: rgb(59, 52, 52)
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.heading{
+  font-weight: 600;
+}
+.content{
+  font-weight: 500;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+/*grade1 division for gradient color background*/
+.categories{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#grad1 {
+  height: 200px;
+  background-color:#861657; /* For browsers that do not support gradients */
+  background-image: linear-gradient(326deg, #861657 0%, #fcaaa2 74%);
+}
+/*add css for toggel method of jquery*/
+#cakedes, #caketype {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  
+}
+
+#cakedes {
+  padding: 50px;
+  display: none;
+}
+  
+/*Side by side professional images */
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px !important;
+}
+/* Create three equal columns that sits next to each other */
+.column1 {
+  flex: 25%;
+  padding: 0px;
+}

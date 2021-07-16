@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container1">
+            <div id="loaddata1"><h2> Ahemdabad Branch</h2></div>
+            <button class="btn btn-success" id="btnclick1">Get More info...</button>
+        </div>
+
+        <script type="text/javascript">
+
+           $(document).ready(function(){
+               $('#btnclick1').click(function(){
+                   $('#loaddata1').load('ahemdabad.html');
+               })
+           });
+        </script>
+
+        <div class="container2">
+            <div id="loaddata2"><h2> Surat Branch</h2></div>
+            <button class="btn btn-success" id="btnclick2">Get More info...</button>
+        </div>
+
+        <script type="text/javascript">
+
+           $(document).ready(function(){
+               $('#btnclick2').click(function(){
+                   $('#loaddata2').load('surat.html');
+               })
+           });
+        </script>
+
+</script>
+
+<div class="container3">
+    <div id="loaddata3"><h2> Rajkot Branch</h2></div>
+    <button class="btn btn-success" id="btnclick3">Get More info...</button>
+</div>
+
+<script type="text/javascript">
+
+   $(document).ready(function(){
+       $('#btnclick3').click(function(){
+           $('#loaddata3').load('Rajkot.html');
+       })
+   });
+</script>
+    </body>
+</html>

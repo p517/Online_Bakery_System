@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 182, 193, 0.6);
+  overflow: auto;
+}
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: rgba(231, 255, 255, 0.5);
+    height: 27px;
+}
+
+  .active {
+    background-color: rgb(255, 111, 224);
+    color: white;
+    height: 27px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+  /*For Rounded Image and border of image*/
+
+  .img_round {
+    border-radius: 50%;
+    border: 5px solid lightgrey;
+  }
+
+  /*To shake an image */
+  img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+
+  /*To have side by side images and particular bottom text with images*/
+
+
+  .column {
+    float: left;
+    width: 8%;
+    padding: 15px;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(59, 52, 52)
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /* For slideshow images*/
+  /* #image {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSZ3yRDnCwp-Iz8Utgf5QSnRAk-0r3AqXoA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  } */
+
+  
